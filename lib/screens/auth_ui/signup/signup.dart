@@ -77,7 +77,7 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
             SizedBox(
-              height: 160,
+              height: 175,
             ),
             Divider(
               color: Palette.gray,

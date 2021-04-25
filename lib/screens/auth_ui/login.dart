@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: SingleChildScrollView(
-                  child: Column(
+          child: Column(
             children: [
               SizedBox(
                 height: MediaQuery.of(context).size.height / 3,
@@ -93,9 +93,18 @@ class _LoginState extends State<Login> {
                 onTap: () {
                   Navigator.pushNamed(context, "/emailSignup");
                 },
-                child: Text(
-                  "Log in with Facebook",
-                  style: RegularBold.copyWith(color: Palette.blue),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SvgPicture.asset(
+                      "assets/vectors/fbBlue.svg",
+                      height: 20,
+                    ),
+                    Text(
+                      "  Log in with Facebook",
+                      style: RegularBold.copyWith(color: Palette.blue),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(
